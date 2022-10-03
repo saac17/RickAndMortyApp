@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+}
+.App{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.body{
+    margin: 0 auto;
+    padding: 0;
+    width: 60%;
+}
+.banner{
+    width: 100%;
+    height: 60vh;
+    background-image: url('https://scontent.fbog2-4.fna.fbcdn.net/v/t39.30808-6/298777225_5461562027273908_5105664347001869396_n.jpg?stp=dst-jpg_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=-pu_oCmSF-AAX_IAvSt&_nc_ht=scontent.fbog2-4.fna&oh=00_AT8tpo6N9ZBE7iyJ-L-E_eG_rPNhqebelW3K1l7_ZZzz9Q&oe=633E468F');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.title{
+    margin: 15px 0 10px 0;
+    padding: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+.formSearch{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.inputAndButton{
+    width: 100%;
+    min-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputSearch{
+    margin: 0;
+    padding: 10px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    background-color: #fff9;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: inherit;
+}
+.formSearch button{
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-family: inherit;
+    width: 20%;
+    background-color: #0009;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.ListLocation{
+    list-style: none;
+    width: 100%;
+    max-height: 200px;
+    margin: 5px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ListLocation li{
+    margin: 0;
+    padding: 5px;
+    padding-left: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    position: relative;
+}
+.Location{
+    margin: 8px 0;
+    padding: 5px;
+    width: auto;
+    background-color: #0004;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.nameLocation{
+    text-align: center;
+    padding: 10px;
+}
+.infoLocation{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.infoLocation li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.infoLocation span{
+    color: lightgreen;
+}
+.residents{
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.resident{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #0003;
+    box-shadow: 3px 3px 7px #17FF00;
+    transition: 0.5s;
+}
+.resident:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 5px 5px 7px #17FF00;
+}
+.imgResident img{
+    width: 100%;
+    border-radius: 5px;
+}
+.statusResident{
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+}
+.infoExtraResident{
+    margin: 0;
+    padding: 10px;
+}
+.infoExtraResident hr{
+    margin: 5px 0;
+}
+.residentInfo{
+    list-style: none;
+}
+.errorScreen{
+    margin: 20px 0;
+    width: 100%;
+    min-height: 400px;
+    background-image: url('https://www.pngplay.com/wp-content/uploads/12/Rick-And-Morty-Wallpaper-Free-Picture-PNG.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: grid;
+    place-content: center;
+}
+.errorScreen h2{
+    color: white;
+    width: 100%;
+    margin-left: 160px;
+    margin-bottom: 100px;
+    transform: rotate(-25deg);
+    font-size: 30px;
+}
+.loading{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.loading h2{
+    font-size: 40px;
+    text-align: center;
+}
+.loading span{
+    margin: 0 auto;
+}
